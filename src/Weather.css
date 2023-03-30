@@ -29,11 +29,10 @@
     list-style: none;
 }
 
-.Weather img {
-    width: 150px;
-    padding: 10px;
-    float: inline-start;
-    margin: 0 20px 0 0 ;
+.Weather canvas {
+    display: inline-block;
+    width: 80px;
+    margin: 20px 10px 0 10px;
    
 }
 
