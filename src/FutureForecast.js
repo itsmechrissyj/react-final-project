@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 import "./FutureForecast.css";
 import axios from "axios";
-import FutureForecastDay from "./FututeForecastDay";
+import FutureForecastDay from "./FutureForecastDay";
 
 
 export default function FutureForecast(props) {
@@ -21,6 +21,20 @@ if (loaded) {
         <div className="col">
             <FutureForecastDay data={forecast[0]} />
         </div>
+        <div className="col">
+            <FutureForecastDay data={forecast[1]} />
+        </div>
+        <div className="col">
+            <FutureForecastDay data={forecast[2]} />
+        </div>
+        <div className="col">
+            <FutureForecastDay data={forecast[3]} />
+        </div>
+        <div className="col">
+            <FutureForecastDay data={forecast[4]} />
+    
+        </div>
+    
         </div>
 
     
