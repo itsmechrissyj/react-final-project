@@ -1,17 +1,25 @@
-import React , {useState} from "react";
+import React , {useState, useEffect} from "react";
 import "./FutureForecast.css";
 import axios from "axios";
 import FutureForecastDay from "./FutureForecastDay";
+
 
 
 export default function FutureForecast(props) {
     let [loaded, setLoaded] = useState (false);
     let [forecast, setForecast] = useState (null);
 
+useEffect(() => {
+   setLoaded(false)
+;}, [props.coordinates]);
+
+
 function handleResponse (response){
 setForecast(response.data.daily)
 setLoaded(true);
 }
+
+
 
 
 
